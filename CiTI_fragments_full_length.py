@@ -31,11 +31,11 @@ def createHelp():
     epilog_string="Any bug is welcome reported to fanxiaojuan@picb.ac.cn"
     description_string='The program is going to extend the paired-end reads interval nucleotides'
     parser = argparse.ArgumentParser(description=description_string,epilog=epilog_string)
-    parser.add_argument('-i', '--input file', dest='fnIn', default='H:/Yangyun/IRES/transcript_ires/sequence/plasmid.rmdup.bed', type=str,help='input file')
-    parser.add_argument('-i_gtf', '--gtf', dest='gtf', default='F:/experiment/database/gencode/gencode.v28lift37.annotation.gtf', type=str,help='input gencode gtf annotation file')
-    parser.add_argument('-db', '--db', dest='db', default='F:/experiment/database/gencode/gencode_v28lift37_comprehensive.txt', type=str,help='input file')
+    parser.add_argument('-i', '--input file', dest='fnIn', default='plasmid.rmdup.bed', type=str,help='input file')
+    parser.add_argument('-i_gtf', '--gtf', dest='gtf', default='gencode.v28lift37.annotation.gtf', type=str,help='input gencode gtf annotation file')
+    parser.add_argument('-db', '--db', dest='db', default='gencode_v28lift37_comprehensive.txt', type=str,help='input file')
     parser.add_argument('-o', '--overhang', dest='o', default=0, type=int,help='input file')
-    parser.add_argument('-o_anno', '--out-annotation', dest='anno', default='H:/Yangyun/IRES/transcript_ires/sequence/plasmid.fragment.rmdup.annotation.bed', type=str,help='output mature mRNA')
+    parser.add_argument('-o_anno', '--out-annotation', dest='anno', default='plasmid.fragment.rmdup.annotation.bed', type=str,help='output mature mRNA')
     op=parser.parse_args()
     return op
 
