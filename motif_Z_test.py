@@ -29,9 +29,9 @@ def createHelp():
     epilog_string="Any bug is welcome reported to fanxiaojuan@picb.ac.cn"
     description_string='The program is going to count z-score of motif.'
     parser = argparse.ArgumentParser(description=description_string,epilog=epilog_string)
-    parser.add_argument('--i-s1', '--input sample 1', dest='fnIn_s1', default='F:/experiment/Yangyun/IRES/transcript_ires/rRNA/IRES.mature.utr5.pair.motif.frequency.txt', help='input sample 1')
-    parser.add_argument('--i-s2', '--input sample 2', dest='fnIn_s2', default='F:/experiment/Yangyun/IRES/transcript_ires/rRNA/IRES.mature.utr5.bg.motif.frequency.txt', help='input sample 2 as background')
-    parser.add_argument('-o', '--output file', dest='fnOut', default='F:/experiment/Yangyun/IRES/transcript_ires/rRNA/IRES.mature.utr5.rRNA.motif', help='output file')
+    parser.add_argument('--i-s1', '--input sample 1', dest='fnIn_s1', default='utr5.motif.frequency.txt', help='input sample 1')
+    parser.add_argument('--i-s2', '--input sample 2', dest='fnIn_s2', default='utr5.bg.motif.frequency.txt', help='input sample 2 as background')
+    parser.add_argument('-o', '--output file', dest='fnOut', default='utr5.motif', help='output file')
     op=parser.parse_args()
     return op
 
